@@ -1,0 +1,14 @@
+uuid: ba53e059-908f-4360-89a7-e4b61d193369
+name: firstdrupal
+mail: mymail@gg.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
