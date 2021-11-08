@@ -1,0 +1,8 @@
+.idea
+vendor
+web/core
+web/modules/contrib
+web/sites/default/files
+web/sites/default/settings.php
+.editorconfig
+bin
