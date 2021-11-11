@@ -1,0 +1,36 @@
+uuid: 7394100b-3eaf-4a9e-ae84-f351800d5de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oleg_ct.body
+    - field.field.node.oleg_ct.field_oleg_image
+    - field.field.node.oleg_ct.field_oleg_numeric
+    - field.field.node.oleg_ct.field_oleg_text_field
+    - node.type.oleg_ct
+  module:
+    - text
+    - user
+id: node.oleg_ct.teaser
+targetEntityType: node
+bundle: oleg_ct
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_oleg_image: true
+  field_oleg_numeric: true
+  field_oleg_text_field: true

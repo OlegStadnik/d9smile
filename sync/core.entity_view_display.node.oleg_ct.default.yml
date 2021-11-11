@@ -1,0 +1,59 @@
+uuid: ed81269d-e0d0-428e-b00f-8415fbeb149b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oleg_ct.body
+    - field.field.node.oleg_ct.field_oleg_image
+    - field.field.node.oleg_ct.field_oleg_numeric
+    - field.field.node.oleg_ct.field_oleg_text_field
+    - node.type.oleg_ct
+  module:
+    - image
+    - text
+    - user
+id: node.oleg_ct.default
+targetEntityType: node
+bundle: oleg_ct
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_oleg_image:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_oleg_numeric:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_oleg_text_field:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

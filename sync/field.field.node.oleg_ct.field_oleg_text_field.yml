@@ -1,0 +1,27 @@
+uuid: fc8d984b-bf7f-44d6-9763-d19c4c0419c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oleg_text_field
+    - node.type.oleg_ct
+  module:
+    - text
+id: node.oleg_ct.field_oleg_text_field
+field_name: field_oleg_text_field
+entity_type: node
+bundle: oleg_ct
+label: Oleg_text_field
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>default text here!</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>second default here</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

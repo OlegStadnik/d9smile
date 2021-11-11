@@ -1,0 +1,36 @@
+uuid: dd9be807-9384-402d-9be2-dfad020685d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sergey_ct.body
+    - field.field.node.sergey_ct.field_field_sergey_image
+    - field.field.node.sergey_ct.field_field_sergey_numeric
+    - field.field.node.sergey_ct.field_field_sergey_text
+    - node.type.sergey_ct
+  module:
+    - text
+    - user
+id: node.sergey_ct.teaser
+targetEntityType: node
+bundle: sergey_ct
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_field_sergey_image: true
+  field_field_sergey_numeric: true
+  field_field_sergey_text: true

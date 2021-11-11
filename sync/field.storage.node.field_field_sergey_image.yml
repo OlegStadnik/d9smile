@@ -1,0 +1,30 @@
+uuid: 4a267740-e5a4-422a-94ac-8907d031ad59
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_field_sergey_image
+field_name: field_field_sergey_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: c537e751-0e79-4723-a7b3-e1c573d00c7b
+    alt: '3 цитаты Фаины Раневской'
+    title: '3 цитаты Фаины Раневской'
+    width: 604
+    height: 341
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

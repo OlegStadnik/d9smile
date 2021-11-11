@@ -1,0 +1,27 @@
+uuid: b86e4be7-6b4b-4145-958a-462e6dbb3ce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oleg_numeric
+    - node.type.oleg_ct
+id: node.oleg_ct.field_oleg_numeric
+field_name: field_oleg_numeric
+entity_type: node
+bundle: oleg_ct
+label: Oleg_numeric
+description: 'numeric field help'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0.69
+  -
+    value: !!float 969
+default_value_callback: ''
+settings:
+  min: !!float -500
+  max: !!float 1500
+  prefix: ''
+  suffix: ''
+field_type: decimal

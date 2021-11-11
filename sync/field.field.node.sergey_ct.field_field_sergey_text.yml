@@ -1,0 +1,24 @@
+uuid: 6b5837e8-f670-4a1c-a7a4-814cdc2e0eeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_sergey_text
+    - node.type.sergey_ct
+  module:
+    - text
+id: node.sergey_ct.field_field_sergey_text
+field_name: field_field_sergey_text
+entity_type: node
+bundle: sergey_ct
+label: field_sergey_text
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>Актриса Фаина Раневская покорила старую Россию и весь Советский Союз. Ее называли скандальной особой, язвительной дамой с искрометным юмором и философом с сигареткой в зубах. Ее боялись и боготворили одновременно, одни искали с ней встреч, а другие избегали. Такой всем запомнилась артистка, которая, прячась за незаурядной личностью, была одинокой и ранимой.</p>\r\n\r\n<p>Фаина Раневская (настоящее имя — Фанни Гиршевна Фельдман) родилась в богатой еврейской семье в конце августа 1896 года, по знаку зодиака Дева. На то время семейство Фельдман жило в собственном доме в Таганроге. Кроме Фаины, подрастали ещё четверо детей: сестра Изабелла Фельдман и трое братьев (один умер в младенчестве). Мама Фаины была домохозяйкой — воспитывала пятерых детей. Папа был влиятельным фабрикантом, владел производственным предприятием, имел магазин, дома и пароход.<img alt=\"Fabyf Ranevskaya\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"468fdd62-773c-4e59-b0ea-9e384a36f972\" height=\"270\" src=\"/sites/default/files/inline-images/ranevskaya.jpg\" width=\"337\" /></p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

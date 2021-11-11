@@ -1,0 +1,20 @@
+uuid: 7ec07e76-47b7-443d-be8b-a34fc33b2cc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_field_sergey_numeric
+field_name: field_field_sergey_numeric
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 78e923dd-1f32-47c2-813d-0f71df354fc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sergey_ct
+  module:
+    - text
+id: node.sergey_ct.body
+field_name: body
+entity_type: node
+bundle: sergey_ct
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,57 @@
+uuid: 30f82b83-5add-4d2d-8c1d-72afb9e0e356
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sergey_ct.body
+    - field.field.node.sergey_ct.field_field_sergey_image
+    - field.field.node.sergey_ct.field_field_sergey_numeric
+    - field.field.node.sergey_ct.field_field_sergey_text
+    - node.type.sergey_ct
+  module:
+    - image
+    - text
+    - user
+id: node.sergey_ct.default
+targetEntityType: node
+bundle: sergey_ct
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_field_sergey_image:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_field_sergey_numeric:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_field_sergey_text:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
