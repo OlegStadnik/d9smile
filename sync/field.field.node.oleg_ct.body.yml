@@ -1,0 +1,23 @@
+uuid: 0d7aa1b8-9210-4aa1-b252-1c811678a00d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oleg_ct
+  module:
+    - text
+id: node.oleg_ct.body
+field_name: body
+entity_type: node
+bundle: oleg_ct
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

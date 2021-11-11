@@ -1,0 +1,25 @@
+uuid: d3519b3b-7337-40b6-9503-f2376b5b1f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_sergey_numeric
+    - node.type.sergey_ct
+id: node.sergey_ct.field_field_sergey_numeric
+field_name: field_field_sergey_numeric
+entity_type: node
+bundle: sergey_ct
+label: field_sergey_numeric
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 100
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

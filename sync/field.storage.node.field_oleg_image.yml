@@ -1,0 +1,30 @@
+uuid: 25ad9596-ae11-4dd0-8ac5-4779871d4b36
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_oleg_image
+field_name: field_oleg_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 27a45d90-88dc-403a-8bda-0b698b5a2db4
+    alt: 'default pike image'
+    title: 'default title here'
+    width: 961
+    height: 1280
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

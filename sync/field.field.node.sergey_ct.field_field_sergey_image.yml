@@ -1,0 +1,38 @@
+uuid: d4126986-a655-42f2-9baf-ac33518f4d45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_sergey_image
+    - node.type.sergey_ct
+  module:
+    - image
+id: node.sergey_ct.field_field_sergey_image
+field_name: field_field_sergey_image
+entity_type: node
+bundle: sergey_ct
+label: field_sergey_image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: 1280x850
+  min_resolution: 476x267
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ef264e1d-a20c-4c3e-a222-c1cc15d1d49f
+    alt: ''
+    title: ''
+    width: 660
+    height: 371
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

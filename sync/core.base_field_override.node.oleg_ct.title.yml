@@ -1,0 +1,18 @@
+uuid: 4a671013-ec0b-4c50-b107-ce883f57437d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oleg_ct
+id: node.oleg_ct.title
+field_name: title
+entity_type: node
+bundle: oleg_ct
+label: 'home task'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
