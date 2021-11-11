@@ -1,0 +1,7 @@
+hello_world.test_module:
+  path: '/hello_world/model'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::content'
+    _title: 'My first page in Drupal '
+  requirements:
+    _permission: 'access content'
