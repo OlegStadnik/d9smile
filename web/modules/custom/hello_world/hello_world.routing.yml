@@ -1,7 +1,27 @@
 hello_world.test_module:
-  path: '/hello_world/model'
+  path: '/hello/model'
   defaults:
     _controller: '\Drupal\hello_world\Controller\HelloWorldController::content'
     _title: 'My first page in Drupal '
   requirements:
     _permission: 'access content'
+
+hello_world.thursday:
+  path: '/hArgument/{firstArg}/{secondArg}'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::thursdayTask'
+    _title: 'thursday classes '
+    firstArg: '5'
+    secondArg: 'hey'
+  requirements:
+    _permission: 'access content'
+
+hello_world.home_task:
+  path: '/show/items/{type}/{color}'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::sundayTask'
+    _title: 'sunday homework '
+    type: ''
+    color: ''
+  requirements:
+      _permission: 'access content'
