@@ -1,0 +1,21 @@
+uuid: 48ec23c8-1c68-427f-bb5d-c1ae4bda989c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube_test_video
+    - node.type.item
+  module:
+    - hello_world
+id: node.item.field_youtube_test_video
+field_name: field_youtube_test_video
+entity_type: node
+bundle: item
+label: 'youtube test video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: hello_world_youtube

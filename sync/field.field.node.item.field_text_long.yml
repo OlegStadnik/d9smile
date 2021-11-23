@@ -1,0 +1,21 @@
+uuid: f7f19a1e-0f0f-44fd-965d-405986f2ea72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_long
+    - node.type.item
+  module:
+    - text
+id: node.item.field_text_long
+field_name: field_text_long
+entity_type: node
+bundle: item
+label: 'Text long'
+description: 'looooong text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

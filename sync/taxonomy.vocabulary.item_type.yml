@@ -1,0 +1,8 @@
+uuid: 6522365b-5453-4d29-b813-da1eeb73c39f
+langcode: en
+status: true
+dependencies: {  }
+name: item_type
+vid: item_type
+description: ''
+weight: 0

@@ -1,0 +1,8 @@
+uuid: b7b8f484-3552-4855-886a-a36d98cb4e16
+langcode: en
+status: true
+dependencies: {  }
+name: item_color
+vid: item_color
+description: ''
+weight: 0

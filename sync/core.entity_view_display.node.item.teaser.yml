@@ -1,0 +1,38 @@
+uuid: 6caa3190-9b75-4e50-8b1a-b4dc5f046c7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.item.body
+    - field.field.node.item.field_item_color
+    - field.field.node.item.field_item_type
+    - field.field.node.item.field_text_long
+    - field.field.node.item.field_youtube_test_video
+    - node.type.item
+  module:
+    - text
+    - user
+id: node.item.teaser
+targetEntityType: node
+bundle: item
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_item_color: true
+  field_item_type: true
+  field_text_long: true
+  field_youtube_test_video: true

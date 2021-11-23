@@ -1,0 +1,18 @@
+uuid: 73694c63-6a9f-4936-9cdd-1a9ad6482778
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: item
+type: item
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

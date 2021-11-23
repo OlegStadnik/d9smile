@@ -1,0 +1,21 @@
+uuid: c7a7f715-1efa-4dca-853a-1708853dc7bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello_world
+  theme:
+    - bartik
+id: helloworldnodesblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: hello_world_nodes_block
+settings:
+  id: hello_world_nodes_block
+  label: 'Hello world nodes list block'
+  provider: hello_world
+  label_display: visible
+  count: '0'
+visibility: {  }

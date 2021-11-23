@@ -1,0 +1,29 @@
+uuid: ff52e907-36cb-48e6-8164-09025c412c79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_item_color
+    - node.type.item
+    - taxonomy.vocabulary.item_color
+id: node.item.field_item_color
+field_name: field_item_color
+entity_type: node
+bundle: item
+label: item_color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      item_color: item_color
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: item_color
+field_type: entity_reference

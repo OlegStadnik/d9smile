@@ -1,0 +1,19 @@
+uuid: 79d7a074-7cbf-4fac-95b5-dfae179c9ab0
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello_world
+    - node
+id: node.field_youtube_test_video
+field_name: field_youtube_test_video
+entity_type: node
+type: hello_world_youtube
+settings: {  }
+module: hello_world
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
