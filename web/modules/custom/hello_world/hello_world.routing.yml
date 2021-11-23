@@ -25,3 +25,11 @@ hello_world.home_task:
     color: ''
   requirements:
       _permission: 'access content'
+
+hello_world.form:
+  path: '/admin/hello_world_form'
+  defaults:
+    _title: 'hello_world Example form'
+    _form: '\Drupal\hello_world\Form\HelloWorldForm'
+  requirements:
+    _permission: 'access content'

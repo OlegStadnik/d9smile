@@ -3,8 +3,9 @@
 namespace Drupal\hello_world\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Field\FieldItemInterface;
+use Drupal\Core\Field\FieldItemListInterface;
+use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\file\Plugin\Field\FieldFormatter\BaseFieldFileFormatterBase;
 
 /**
  * Formatter for a text field on a file entity that links the field to the file.
@@ -14,11 +15,12 @@ use Drupal\file\Plugin\Field\FieldFormatter\BaseFieldFileFormatterBase;
  *   label = @Translation("hello_world_formatter"),
  *   field_types = {
  *     "text",
- *     "text long"
+ *     "text_long",
+ *     "text_with_summary",
  *   }
  * )
  */
-class HelloWorldFileFormatter extends BaseFieldFileFormatterBase {
+class HelloWorldFormatter extends FormatterBase {
 
   /**
    * {@inheritdoc}
@@ -38,11 +40,19 @@ class HelloWorldFileFormatter extends BaseFieldFileFormatterBase {
     return $form;
   }
 
+  public function viewElements(FieldItemListInterface $items, $langcode) {
+    $elems = [];
+    foreach ($items as $item) {
+      $elems[] = ['#markup' => $this->viewValue($item)];
+    }
+    return $elems;
+  }
+
   /**
    * {@inheritdoc}
    */
   protected function viewValue(FieldItemInterface $item) {
-    return $item->value;
+    return substr($item->value, 0 ,100);
   }
 
 

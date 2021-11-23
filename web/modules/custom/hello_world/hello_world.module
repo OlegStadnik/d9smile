@@ -1,0 +1,50 @@
+<?php
+
+use Drupal\taxonomy\TermInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function hello_world_theme() {
+  return [
+    'hello_world_video_formatter' => [
+      'variables' => ['width' => 600, 'height' => 450, 'video_id' => NULL],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function hello_world_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  $urlArray = [
+    'https://www.youtube.com/watch?v=0bubPWAQhpk',
+    'https://www.youtube.com/watch?v=bXUyVdmrfys',
+    'https://www.youtube.com/watch?v=Xfcvms9yUoc',
+  ];
+
+  if ($entity->getEntityTypeId() == 'node' && $entity->getType() == 'item') {
+
+    $field = $entity->get('field_youtube_test_video');
+    $v = $field->getValue();
+    $v[0]["value"] = $urlArray[array_rand($urlArray, 1)];
+    $field->setValue($v);
+
+    // = $urlArray[array_rand($urlArray , 1)];
+  }
+
+}
+
+function hello_world_taxonomy_term_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  /** @var \Drupal\taxonomy\Entity\Term $entity */
+  if (!($entity instanceof TermInterface) || $entity->vid->target_id != 'item_type') {
+    return;
+  }
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties([
+    'type' => 'item',
+  ]);
+  foreach ($nodes as $node) {
+    $node->field_item_type->target_id = $entity->id();
+    $node->save();
+  }
+}
